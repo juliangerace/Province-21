@@ -1,0 +1,36 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+  padding-top: 3.5rem;
+}
+
+
+h1 {
+	font-family: "priori-sans";
+}
+/*custom buttons*/
+.btn-sin {
+	background-color:#c31237;color:white;
+}
+.btn-sin:hover {
+	background-color:#9C2C43; color:white;
+}
+/*custom lines*/
+.hr-red {
+	background-color:#c31237; height: 2px; border:none; padding:0px; margin:0px; margin-top:2px; 
+}
+.hr-gold {
+	background-color:#A87A00; height: 2px; border:none; padding:0px; margin:0px; margin-top:5px;
+}
+
+.shadow {
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 0.08s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.shadow-nohover {
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
