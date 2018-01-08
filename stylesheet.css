@@ -1,5 +1,7 @@
 @charset "UTF-8";
 /* CSS Document */
+
+/*navbar compensation*/
 body {
   padding-top: 3.5rem;
 }
@@ -8,6 +10,8 @@ body {
 h1 {
 	font-family: "priori-sans";
 }
+
+
 /*custom buttons*/
 .btn-sin {
 	background-color:#c31237;color:white;
@@ -15,14 +19,22 @@ h1 {
 .btn-sin:hover {
 	background-color:#9C2C43; color:white;
 }
+
+
 /*custom lines*/
 .hr-red {
 	background-color:#c31237; height: 2px; border:none; padding:0px; margin:0px; margin-top:2px; 
 }
 .hr-gold {
-	background-color:#A87A00; height: 2px; border:none; padding:0px; margin:0px; margin-top:5px;
+	background-color:#A87A00; height: 2px; border:none; padding:0px; margin:0px; margin-top:3px;
 }
 
+.divider-sin {
+	background-color: hsla(347,83%,42%,0.50); height: 2px;
+}
+
+
+/*custom shadow*/
 .shadow {
   box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
   transition: box-shadow 0.08s cubic-bezier(0.4, 0, 0.2, 1);
@@ -33,4 +45,25 @@ h1 {
   transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/*changing sinfonia link*/
+@media only screen and (min-width: 768px) {
+	.nav-sm-li {
+		display:none;
+	}
+}
 
+
+@media only screen and (max-width : 768px) {
+	.nav-sm {
+		text-align: center;
+	}
+	.nav-sm-btn {
+		display:none;
+	}
+	.nav-sm-li {
+		color:white; background-color:#c31237; padding:8px 20px; border-radius: 5px; 
+	}
+	.nav-sm-li:hover {
+		color:white; text-decoration: none; background-color:#951832;
+	}
+}
