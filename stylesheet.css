@@ -67,3 +67,7 @@ h1 {
 		color:white; text-decoration: none; background-color:#951832;
 	}
 }
+
+#callout {
+	background-image: #ffffff url('images/sinf-background.jpg');
+}
