@@ -7,10 +7,9 @@ body {
 }
 
 
-h1 {
+h1, h3 {
 	font-family: "priori-sans";
 }
-
 
 /*custom buttons*/
 .btn-sin {
@@ -68,6 +67,16 @@ h1 {
 	}
 }
 
-#callout {
-	background-image: #ffffff url('images/sinf-background.jpg');
+.workshop {
+    color:#fff;
+    text-align:center;
+    background:url(images/sinf-background.png);
+    background-size:cover;
+    background-position:center;
+    padding-top:100px;
+    padding-bottom:100px;
+}
+
+.card-img-top {
+    width: 100%;
 }
