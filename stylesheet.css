@@ -2,81 +2,144 @@
 /* CSS Document */
 
 /*navbar compensation*/
+
 body {
-  padding-top: 3.5rem;
+    padding-top: 3.5rem;
 }
 
 
-h1, h3 {
-	font-family: "priori-sans";
+h1,h3 {
+    font-family: "priori-sans";
 }
 
 /*custom buttons*/
+
 .btn-sin {
-	background-color:#c31237;color:white;
+    background-color: #c31237;
+    color: white;
 }
+
 .btn-sin:hover {
-	background-color:#9C2C43; color:white;
+    background-color: #9C2C43;
+    color: white;
 }
 
 
 /*custom lines*/
+
 .hr-red {
-	background-color:#c31237; height: 2px; border:none; padding:0px; margin:0px; margin-top:2px; 
-}
-.hr-gold {
-	background-color:#A87A00; height: 2px; border:none; padding:0px; margin:0px; margin-top:3px;
+    background-color: #c31237;
+    height: 2px;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 2px;
 }
 
+.hr-gold {
+    background-color: #A87A00;
+    height: 2px;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 3px;
+}
+
+
 .divider-sin {
-	background-color: hsla(347,83%,42%,0.50); height: 2px;
+    background-color: hsla(347, 83%, 42%, 0.50);
+    height: 2px;
 }
 
 
 /*custom shadow*/
+
 .shadow {
-  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
-  transition: box-shadow 0.08s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.08s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .shadow-nohover {
-  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
-  transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/*changing sinfonia link*/
+
+@media only screen and (max-width: 768px) {
+    .nav-sm {
+        text-align: center;
+    }
+    .nav-sm-btn {
+        display: none;
+    }
+    .nav-sm-li {
+        color: white;
+        background-color: #c31237;
+        padding: 8px 20px;
+        border-radius: 5px;
+    }
+    .nav-sm-li:hover {
+        color: white;
+        text-decoration: none;
+        background-color: #951832;
+    }
+    .card-img-top {
+        border-radius: 0;
+    }
+
+    .card-img-profile {
+        max-width: 100%;
+        border-radius: 50%;
+        margin-top: -100px;
+        margin-bottom: -5px;
+        border: 5px solid grey;
+
+    }
+}
+
 @media only screen and (min-width: 768px) {
-	.nav-sm-li {
-		display:none;
-	}
+    .nav-sm-li {
+        display: none;
+    }
+
+    .card-img-profile {
+        max-width: 50%;
+        border-radius: 50%;
+        margin-top: -30px;
+        margin-bottom: -5px;
+        border: 3px solid grey;
+
+    }
 }
 
+@media only screen and (min-width: 992px) {
+    .card-img-top {
+        border-radius: 0;
+    }
 
-@media only screen and (max-width : 768px) {
-	.nav-sm {
-		text-align: center;
-	}
-	.nav-sm-btn {
-		display:none;
-	}
-	.nav-sm-li {
-		color:white; background-color:#c31237; padding:8px 20px; border-radius: 5px; 
-	}
-	.nav-sm-li:hover {
-		color:white; text-decoration: none; background-color:#951832;
-	}
+    .card-img-profile {
+        max-width: 100%;
+        border-radius: 50%;
+        margin-top: -70px;
+        margin-bottom: -5px;
+        border: 5px solid grey;
+
+    }
 }
 
 .workshop {
-    color:#fff;
-    text-align:center;
-    background:url(images/sinf-background.png);
-    background-size:cover;
-    background-position:center;
-    padding-top:100px;
-    padding-bottom:100px;
+    color: #fff;
+    text-align: center;
+    background: url(images/sinf-background.png);
+    background-size: cover;
+    background-position: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
-.card-img-top {
-    width: 100%;
+.names {
+    font-variant-caps: small-caps;
+    text-align: center;
+    margin-top: -3px;
+    padding-bottom: 3px;
 }
