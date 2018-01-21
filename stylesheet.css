@@ -1,90 +1,78 @@
 @charset "UTF-8";
-/* CSS Document */
-
-/*navbar compensation*/
 
 body {
-    padding-top: 3.5rem;
+    padding-top: 3.5rem
 }
-
 
 h1,h3 {
-    font-family: "priori-sans";
+    font-family: "priori-sans"
 }
-
-/*custom buttons*/
 
 .btn-sin {
     background-color: #c31237;
-    color: white;
+    color: #fff
 }
 
 .btn-sin:hover {
-    background-color: #9C2C43;
-    color: white;
+    background-color: #9c2c43;
+    color: #fff
 }
 
-
-/*custom lines*/
-
-.hr-red {
+.hr-gold,.hr-red {
     background-color: #c31237;
     height: 2px;
-    border: none;
-    padding: 0px;
-    margin: 0px;
-    margin-top: 2px;
+    border: 0;
+    padding: 0;
+    margin: 2px 0 0
 }
 
 .hr-gold {
-    background-color: #A87A00;
-    height: 2px;
-    border: none;
-    padding: 0px;
-    margin: 0px;
-    margin-top: 3px;
+    background-color: #a87a00;
+    margin: 3px 0 0
 }
-
 
 .divider-sin {
-    background-color: hsla(347, 83%, 42%, 0.50);
-    height: 2px;
+    background-color: rgba(196, 18, 57, .5);
+    height: 2px
 }
 
-
-/*custom shadow*/
-
-.shadow {
-    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
-    transition: box-shadow 0.08s cubic-bezier(0.4, 0, 0.2, 1);
+.shadow,.shadow-nohover {
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12);
+    transition: box-shadow .08s cubic-bezier(.4, 0, .2, 1)
 }
 
 .shadow-nohover {
-    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
-    transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow .28s cubic-bezier(.4, 0, .2, 1)
 }
 
+.card-bg {
+    background-color: #fff
+}
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width:768px) {
     .nav-sm {
-        text-align: center;
+        text-align: center
     }
+
     .nav-sm-btn {
-        display: none;
+        display: none
     }
+
     .nav-sm-li {
-        color: white;
+        color: #fff;
         background-color: #c31237;
         padding: 8px 20px;
-        border-radius: 5px;
+        border-radius: 5px
     }
+
     .nav-sm-li:hover {
-        color: white;
+        color: #fff;
         text-decoration: none;
-        background-color: #951832;
+        background-color: #951832
     }
+
     .card-img-top {
-        border-radius: 0;
+        border-radius: 0
     }
 
     .card-img-profile {
@@ -92,14 +80,13 @@ h1,h3 {
         border-radius: 50%;
         margin-top: -100px;
         margin-bottom: -5px;
-        border: 5px solid grey;
-
+        border: 5px solid gray
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width:768px) {
     .nav-sm-li {
-        display: none;
+        display: none
     }
 
     .card-img-profile {
@@ -107,14 +94,13 @@ h1,h3 {
         border-radius: 50%;
         margin-top: -30px;
         margin-bottom: -5px;
-        border: 3px solid grey;
-
+        border: 3px solid gray
     }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width:992px) {
     .card-img-top {
-        border-radius: 0;
+        border-radius: 0
     }
 
     .card-img-profile {
@@ -122,8 +108,7 @@ h1,h3 {
         border-radius: 50%;
         margin-top: -70px;
         margin-bottom: -5px;
-        border: 5px solid grey;
-
+        border: 5px solid gray
     }
 }
 
@@ -134,17 +119,42 @@ h1,h3 {
     background-size: cover;
     background-position: center;
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 100px
+}
+.card-name {
+    text-align: center;
+    padding-top: 8px
 }
 
-.names {
+.card-position {
     font-variant-caps: small-caps;
     text-align: center;
     margin-top: -3px;
-    padding-bottom: 3px;
+    padding-bottom: 3px
 }
 
-.hideme
-{
-    opacity:0;
+.card-footer {
+    background-color: #ededed
+}
+
+.card-footer:hover {
+	background-color: #D3D3D3;
+}
+
+.card-link, .card-link:hover {
+	color:#181818;
+	text-decoration: none;
+}
+
+.badge-sin {
+	background-color:#6F6F6F;
+	color:#fff;
+	font-weight: normal;
+	font-variant: normal;
+	vertical-align: middle;
+	padding: 8px;
+}
+
+.hideme {
+    opacity: 0
 }
