@@ -132,6 +132,27 @@ h1,h3 {
     padding-bottom: 100px;
 }
 
+.red-wipe {
+    color: #fff;
+    text-align: center;
+    background-color: #c31237;
+    background-size: cover;
+    background-position: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.gold-wipe {
+    color: #fff;
+    text-align: center;
+    background-color: #a87a00;
+    background-size: cover;
+    background-position: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    
+}
+
 .jumb-photo {
     color: #fff;
     text-align: center;
