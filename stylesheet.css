@@ -93,6 +93,21 @@ h1,h3 {
         border: 5px solid gray
     }
 }
+.delay-1 {
+animation-delay: .25s;
+}
+.delay-2 {
+animation-delay: .5s;
+}
+.delay-3 {
+animation-delay: .75s;
+}
+.delay-4 {
+animation-delay: 1s;
+}
+.delay-5 {
+animation-delay: 1.25s;
+}
 
 .video-responsive{
     overflow:hidden;
