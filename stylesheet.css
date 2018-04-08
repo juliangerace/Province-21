@@ -2,7 +2,7 @@
 
 body {
     padding-top: 3.5rem;
-    overflow: hidden;
+    overflow-x:hidden;
 }
 
 h1,h3 {
@@ -61,6 +61,7 @@ h1,h3 {
 }
 
 @media only screen and (max-width:768px) {
+    
     .nav-sm {
         text-align: center
     }
